@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-sm"  *ngFor = "let history of customerHistory">
+      <div class="card  text-center">
+              <div class="card-header">
+               {{history.insuranceTye}}
+              </div>
+              <div class="card-body">         
+                <p class="card-text">No. of Policies:{{history.numberOfPolicies}}</p>
+                <p class="card-text">Total Amount:{{history.totalAmount | currency:'INR'}}</p>
+                <p class="card-text">Total claims Intimated: {{history.totalClaimInitiated}}</p>
+                <p class="card-text">No. of claims  Paid:{{history.numberOfClaimsPaid}}</p>
+                <p class="card-text">claims paid Amount:{{history.claimsPaidAmount |  currency:'INR'}}</p>         
+              </div>
+      </div>
+      </div>
+</div>
